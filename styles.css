@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+.container, .container2, .container3{
+    width: 85vw;
+    height: 85vh;    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out;
+
+}
+
+.container
+{
+    background-image: url(photos/1.jpeg);
+    transform: translate(-12px, -12px);
+}
+.container2
+{
+    background-image: url(photos/2.jpeg);
+    transform: translate(0px, 0px);
+}
+.container3
+{
+    background-image: url(photos/3.jpeg);
+    transform: translate(12px, 12px);
+}
+
+
+.slider > img{
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    margin: auto;
+    filter:brightness(10%);
+    transition:filter 0.1s ease-in-out;
+
+}
+.slider{
+    opacity: 1;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(10px) brightness(70%);
+    filter: drop-shadow(0px 0px 200px rgb(0, 0, 0));
+    background-color: rgba(0, 0, 0, 0.616);
+    transition: background-color 0.1s ease-in-out;
+}
+
+ul ,li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+.nav{
+    z-index: 20;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+    width: 100%;
+}
+.button{
+    height:40px;
+    width:50px;
+    background-color: transparent;
+    border: none;
+    font-size:45px;
+    transition: color 0.2s ease-in-out;
+    color: white;
+    height:46px
+}
+.button:hover, .mute:hover{
+    cursor: pointer;
+    filter: opacity(70%) brightness(70%);
+    transition: filter 0.2s ease-in-out;
+}
+.mute{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    z-index: 300;
+}
+#back, #next{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wish{
+    color: white;
+    z-index: 22;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 3em;
+}
+.wish{
+    filter: blur(20px);
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;}
