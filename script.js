@@ -3,7 +3,7 @@ const containter2 = document.querySelector('.container2')
 const containter3 = document.querySelector('.container3')
 const h1 = document.getElementById("wish")
 const audio = document.querySelector("audio")
-audio.volume = 0.1
+audio.volume = 0.3
 image = document.getElementById('image')
 const cards = 35
 const timeout = 5000
@@ -214,7 +214,7 @@ mute.addEventListener("click", function () {
     if (muteicon.classList.contains('fa-volume-xmark')) {
         muteicon.classList.remove('fa-volume-xmark')
         muteicon.classList.add('fa-volume-high')
-        audio.volume = 0.1
+        audio.volume = 0.3
     } else {
         muteicon.classList.remove('fa-volume-high')
         muteicon.classList.add('fa-volume-xmark')
